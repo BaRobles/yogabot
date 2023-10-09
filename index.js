@@ -255,7 +255,7 @@ function processMessage(){
     setTimeout(function(){
       chatbotSendMessage("Yôga significa união! Mas seu significado vai muito além da superfície, mergulhe conosco nessa jornada!")
     },800);
-  } else if(user.message == "menu"){
+  } else if(user.message == "menu" || user.message == "Menu"){
     setTimeout(function(){
       chatbotSendMessage("Ajude-me a entender a sua dúvida. Você deseja saber sobre:")
     },800);
