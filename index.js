@@ -232,9 +232,9 @@ let arrayOfPossibleMEssages = [
   {"message":"tenho dor nas costas", "response": "O Yôga pode te ajudar a melhorar as suas dores! Nas aulas, trabalhamos fortalecimento e flexibilidade dos músculos, o que resulta numa maior saúde física e ausência de dores."},
   {"message":"tenho dor", "response": "O Yôga pode te ajudar a melhorar as suas dores! Nas aulas, trabalhamos fortalecimento e flexibilidade dos músculos, o que resulta numa maior saúde física e ausência de dores."},
   {"message":"tenho ansiedade", "response": "O Yôga pode te ajudar a melhorar a sua ansiedade. Com as aulas você vai se sentir mais sereno(a). Além disso, nossas aulas sobre a filosofia do Yôga visam fazer com que o aluno enxergue o mundo com maior clareza, reduzindo pensamentos desnecessários."},
-  {"message":"o que é yoga", "response": "Yôga é uma filosofia prática, que visa a expansão da consciência. Mas mesmo que você não tenha esse objetivo, o Yôga é uma ferramenta poderosa para desenvolver: flexibilidade, força física e mental, inteligência emocional, intuição, capacidade pulmonar, maior controle das suas energias e emoções, aumento da concentração, entre muitos outros benefícios!"},
-  {"message":"o que é ioga", "response": "Yôga é uma filosofia prática, que visa a expansão da consciência. Mas mesmo que você não tenha esse objetivo, o Yôga é uma ferramenta poderosa para desenvolver: flexibilidade, força física e mental, inteligência emocional, intuição, capacidade pulmonar, maior controle das suas energias e emoções, aumento da concentração, entre muitos outros benefícios!"},
-  {"message":"o que é Yôga", "response": "Yôga é uma filosofia prática, que visa a expansão da consciência. Mas mesmo que você não tenha esse objetivo, o Yôga é uma ferramenta poderosa para desenvolver: flexibilidade, força física e mental, inteligência emocional, intuição, capacidade pulmonar, maior controle das suas energias e emoções, aumento da concentração, entre muitos outros benefícios!"}
+  {"message":"o que é yoga?", "response": "Yôga é uma filosofia prática, que visa a expansão da consciência. Mas mesmo que você não tenha esse objetivo, o Yôga é uma ferramenta poderosa para desenvolver: flexibilidade, força física e mental, inteligência emocional, intuição, capacidade pulmonar, maior controle das suas energias e emoções, aumento da concentração, entre muitos outros benefícios!"},
+  {"message":"o que é ioga?", "response": "Yôga é uma filosofia prática, que visa a expansão da consciência. Mas mesmo que você não tenha esse objetivo, o Yôga é uma ferramenta poderosa para desenvolver: flexibilidade, força física e mental, inteligência emocional, intuição, capacidade pulmonar, maior controle das suas energias e emoções, aumento da concentração, entre muitos outros benefícios!"},
+  {"message":"o que é Yôga?", "response": "Yôga é uma filosofia prática, que visa a expansão da consciência. Mas mesmo que você não tenha esse objetivo, o Yôga é uma ferramenta poderosa para desenvolver: flexibilidade, força física e mental, inteligência emocional, intuição, capacidade pulmonar, maior controle das suas energias e emoções, aumento da concentração, entre muitos outros benefícios!"}
 ];
 
 function processMessage(){
@@ -267,7 +267,7 @@ function processMessage(){
     },1500);
   } else {
     setTimeout(function(){
-      chatbotSendMessage("Por favor, me mande uma mensagem completa ou digite menu para voltar ao menu principal.")
+      chatbotSendMessage("Por favor, me mande uma mensagem completa ou digite 'menu' para voltar ao menu principal.")
     },1500);
   }
 }
