@@ -4,24 +4,19 @@ let chatContainer = document.getElementById('chat-container');
 let yesBtn;
 let backBtn;
 
-var user = {message:"", counter:0 };
+let user = {message:"", counter:0 };
 
 
-setTimeout(function(){
-  chatbotSendMessage("Olá! Sou o Hamsa, o cisne do Yôga Yuga, e estou aqui para ajudá-lo(a) a navegar pelo nosso site!")
-},800);
-setTimeout(function(){
-  chatbotSendMessage("Ajude-me a entender a sua dúvida. Você deseja saber sobre:")
-},2000);
+// Mensagens de boas-vindas
+setTimeout(() => chatbotSendMessage("Olá! Sou o Hamsa, o cisne do Yôga Yuga, e estou aqui para ajudá-lo(a) a navegar pelo nosso site!"), 800);
+setTimeout(() => chatbotSendMessage("Ajude-me a entender a sua dúvida. Você deseja saber sobre:"), 2000);
+setTimeout(() => initializeOptions(), 3400);
 
-setTimeout(function(){
-  initializeOptions();
-}, 3400);
 
 
 function initializeOptions(){
 
-  let options = [
+  const options = [
     {
       title: "Aulas Individuais",
       suboptions: [
@@ -130,6 +125,8 @@ function initializeOptions(){
     });
   }
 };
+
+
 
 function chatbotSendMessage(messageText){
   let messageElement = document.createElement('div');
